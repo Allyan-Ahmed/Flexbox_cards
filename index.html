@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(104, 141, 219), rgb(126, 198, 226));
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+
+        .container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 490px;
+        }
+
+        .card {
+            width: 250px;
+            height: 400px;
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+
+        .card:hover {
+            color: white;
+            background-image: linear-gradient(rgb(160, 210, 229), rgb(47, 83, 97));
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        CSS Flexbox Cards
+    </h1>
+    <div class="container">
+        <div class="html card">
+            <img src="HTML2.png" alt="">
+            <h3>HTML</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tempora magni reprehenderit eos! Officia
+                aspernatur voluptatum dignissimos, vitae provident cupiditate facere. Ut voluptatum, blanditiis tempore
+                sint exercitationem beatae quas nesciunt.
+            </p>
+        </div>
+        <div class="css card">
+            <img style="width: 90px;" src="CSS.png" alt="">
+            <h3>CSS</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tempora magni reprehenderit eos! Officia
+                aspernatur voluptatum dignissimos, vitae provident cupiditate facere. Ut voluptatum, blanditiis tempore
+                sint exercitationem beatae quas nesciunt.
+            </p>
+        </div>
+        <div class="js card">
+            <img src="JS.png" alt="">
+            <h3>Javascript</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tempora magni reprehenderit eos! Officia
+                aspernatur voluptatum dignissimos, vitae provident cupiditate facere. Ut voluptatum, blanditiis tempore
+                sint exercitationem beatae quas nesciunt.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
